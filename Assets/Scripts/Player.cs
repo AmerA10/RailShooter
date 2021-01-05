@@ -23,6 +23,19 @@ public class Player : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collided with something");
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Triggered something");
+        if(other.transform.tag.Equals("Enemy"))
+        {
+            Debug.Log("Collided with enemy");
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
