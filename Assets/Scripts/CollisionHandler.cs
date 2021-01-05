@@ -11,15 +11,17 @@ public class CollisionHandler : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered something");
-        if (other.transform.tag.Equals("Enemy"))
-        {
-            Debug.Log("Collided with enemy");
-        }
+        StartDeathSequence();
     }
     // Update is called once per frame
     void Update()
     {
         
     }
+
+   private void StartDeathSequence()
+   {
+        Debug.Log("Player is dead");
+        SendMessage("OnPlayerDeath");
+   }
 }
