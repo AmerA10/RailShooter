@@ -1,30 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 public class MusicPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
-    }
-    void Start()
-    {
-        Invoke("LoadFirstScene", 3f);
-        
+       int numMusicPlayers =  FindObjectsOfType<MusicPlayer>().Length;
+       if(numMusicPlayers > 1)
+        {
+            Destroy(this.gameObject);
+        }
+       else
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+        //Singleton pattern:
+        //if more than one music player in scene
+            //Destroy ourselves
+        //Else
+       
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
-    void LoadFirstScene()
-    {
-        SceneManager.LoadScene(1);
-    }
 }
 

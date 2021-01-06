@@ -6,15 +6,15 @@ public class CollisionHandler : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    [SerializeField] float levelLoadDelay = 1f;
-    [SerializeField] GameObject explosion;
+    [Tooltip("In Seconds")][SerializeField] float levelLoadDelay = 1f;
+    [SerializeField] GameObject deathFX;
     void Start()
     {
         
     }
     private void OnTriggerEnter(Collider other)
     {
-        explosion.SetActive(true);
+        deathFX.SetActive(true);
         StartDeathSequence();
         Invoke("ReloadScene", levelLoadDelay);
     }

@@ -421,7 +421,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 32
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5917,6 +5917,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5296194967142234554}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1139351399
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8481402158633001074, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_Name
+      value: MusicPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481402158633001075, guid: 3b34f684256c92544b563d5d834a9d3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b34f684256c92544b563d5d834a9d3c, type: 3}
 --- !u!4 &1225839093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6048435044685781829, guid: 3730d6e959067ef4191ee3936004653b,
@@ -6159,6 +6228,19 @@ PrefabInstance:
       propertyPath: InitialModule.startSpeed.scalar
       value: 400
       objectReference: {fileID: 0}
+    - target: {fileID: 759726845, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 782856186, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
+      propertyPath: positionYawFactor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329398943456456026, guid: 03d26f2f3e7c8fd458840f287390f9a1,
+        type: 3}
+      propertyPath: deathFX
+      value: 
+      objectReference: {fileID: 344703103}
     - target: {fileID: 2329398943456456026, guid: 03d26f2f3e7c8fd458840f287390f9a1,
         type: 3}
       propertyPath: explosion
@@ -6233,6 +6315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676702211216284416, guid: 03d26f2f3e7c8fd458840f287390f9a1,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
