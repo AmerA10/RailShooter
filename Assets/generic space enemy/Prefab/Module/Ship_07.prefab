@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 4301618257826614}
   - component: {fileID: 33320748614889338}
   - component: {fileID: 23737017157804400}
-  - component: {fileID: 1364115230}
-  - component: {fileID: 1364115231}
   m_Layer: 0
   m_Name: Ship_07
   m_TagString: Enemy
@@ -83,32 +81,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1364115230
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330105141890764}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.38938543, y: 0.65080833, z: 0.10090974}
-  m_Center: {x: 2.2783132e-16, y: -0.00000047683716, z: -0.000000005587937}
---- !u!54 &1364115231
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330105141890764}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
