@@ -280,6 +280,12 @@ Transform:
   m_Father: {fileID: 324223104}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &175208622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 759726842, guid: 03d26f2f3e7c8fd458840f287390f9a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2676702210983241800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &219037805
 GameObject:
   m_ObjectHideFlags: 0
@@ -5434,6 +5440,7 @@ MonoBehaviour:
   deathFX: {fileID: 2333630117817725496, guid: 6d51e6719b2614841b84d780c1ebd2cc, type: 3}
   deathParent: {fileID: 664568381}
   scorePerHit: 12
+  maxHits: 3
 --- !u!4 &528982915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1604407308177656772, guid: bf4e65e94b1486d4b94f1f43473d7c96,
@@ -5630,6 +5637,7 @@ MonoBehaviour:
   deathFX: {fileID: 2333630117817725496, guid: 6d51e6719b2614841b84d780c1ebd2cc, type: 3}
   deathParent: {fileID: 664568381}
   scorePerHit: 12
+  maxHits: 3
 --- !u!1 &664568380
 GameObject:
   m_ObjectHideFlags: 0
@@ -5747,6 +5755,7 @@ MonoBehaviour:
   deathFX: {fileID: 2333630117817725496, guid: 6d51e6719b2614841b84d780c1ebd2cc, type: 3}
   deathParent: {fileID: 664568381}
   scorePerHit: 20
+  maxHits: 3
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5924,6 +5933,7 @@ MonoBehaviour:
   deathFX: {fileID: 2333630117817725496, guid: 6d51e6719b2614841b84d780c1ebd2cc, type: 3}
   deathParent: {fileID: 664568381}
   scorePerHit: 12
+  maxHits: 3
 --- !u!1 &781623595
 GameObject:
   m_ObjectHideFlags: 0
@@ -6038,6 +6048,7 @@ MonoBehaviour:
   deathFX: {fileID: 2333630117817725496, guid: 6d51e6719b2614841b84d780c1ebd2cc, type: 3}
   deathParent: {fileID: 664568381}
   scorePerHit: 64
+  maxHits: 3
 --- !u!1001 &950511247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6265,6 +6276,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b34f684256c92544b563d5d834a9d3c, type: 3}
+--- !u!1 &1157216966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2676702211216284429, guid: 03d26f2f3e7c8fd458840f287390f9a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2676702210983241800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1178082080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
@@ -6286,6 +6303,7 @@ MonoBehaviour:
   deathFX: {fileID: 2333630117817725496, guid: 6d51e6719b2614841b84d780c1ebd2cc, type: 3}
   deathParent: {fileID: 664568381}
   scorePerHit: 24
+  maxHits: 3
 --- !u!4 &1225839093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6048435044685781829, guid: 3730d6e959067ef4191ee3936004653b,
@@ -6313,6 +6331,7 @@ MonoBehaviour:
   deathFX: {fileID: 2333630117817725496, guid: 6d51e6719b2614841b84d780c1ebd2cc, type: 3}
   deathParent: {fileID: 664568381}
   scorePerHit: 52
+  maxHits: 3
 --- !u!1 &1319217995
 GameObject:
   m_ObjectHideFlags: 0
@@ -6566,6 +6585,7 @@ MonoBehaviour:
   deathFX: {fileID: 2333630117817725496, guid: 6d51e6719b2614841b84d780c1ebd2cc, type: 3}
   deathParent: {fileID: 664568381}
   scorePerHit: 12
+  maxHits: 3
 --- !u!1 &1687052794
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,8 +6785,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 759726842, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
+      propertyPath: m_Name
+      value: GunLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 759726842, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 759726845, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
       propertyPath: CollisionModule.type
@@ -6790,12 +6814,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 759726845, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 7
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 782856186, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
+      propertyPath: xSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 782856186, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 782856186, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
+      propertyPath: controlRollFactor
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 782856186, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
       propertyPath: positionYawFactor
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 782856186, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1157216966}
+    - target: {fileID: 782856186, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 175208622}
     - target: {fileID: 2329398943456456026, guid: 03d26f2f3e7c8fd458840f287390f9a1,
         type: 3}
       propertyPath: deathFX
@@ -6899,12 +6943,17 @@ PrefabInstance:
     - target: {fileID: 2676702211216284416, guid: 03d26f2f3e7c8fd458840f287390f9a1,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 7
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676702211216284429, guid: 03d26f2f3e7c8fd458840f287390f9a1,
+        type: 3}
+      propertyPath: m_Name
+      value: GunRight
       objectReference: {fileID: 0}
     - target: {fileID: 2676702211216284429, guid: 03d26f2f3e7c8fd458840f287390f9a1,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d26f2f3e7c8fd458840f287390f9a1, type: 3}

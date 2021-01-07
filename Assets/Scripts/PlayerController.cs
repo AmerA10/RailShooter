@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
 
     float xThrow, yThrow;
     bool isControlEnabled = true;
+
+
+    [SerializeField] GameObject[] guns;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +39,7 @@ public class PlayerController : MonoBehaviour
         {
             ProccessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
      
 
@@ -71,5 +75,31 @@ public class PlayerController : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawYPos, yMinRange, yMaxRange);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+    }
+    private void ProcessFiring()
+    {
+        if(CrossPlatformInputManager.GetButton("Fire"))
+        {
+           
+            ActivateGuns();
+        }
+        else
+        {
+            DeactivateGuns();
+        }
+    }
+    private void ActivateGuns()
+    {
+        foreach(GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+    private void DeactivateGuns()
+    {
+        foreach(GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
     }
 }
